@@ -1,13 +1,88 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Quicksand', 'Arial', sans-serif;
+  background-color: white;
+  line-height: 1.5;
+  color: black;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  margin: 12px 0;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+img {
+  width: 100px;
+  margin-right: 16px;
+}
+
+a,
+a:visited,
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.page-container {
+  width: 1000px;
+  /* Jup, dit is bad practise maar houdt de code overzichtelijk voor de tutorial: */
+  margin: 10px;
+}
+
+.nav-container {
+  width: 800px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+}
+
+nav {
+  width: 100%;
+  background-color: darkorange;
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+}
+
+.nav-ul {
+  list-style-type: none;
+  flex-basis: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+div ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  font-size: 12px;
+}
+
+
+.active-link {
+  border-bottom: 2px solid white;
 }
